@@ -23,9 +23,15 @@
               "src/assets"
             ],
             "styles": [
+              "semantic/dist/semantic.rtl.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/app/core/elements/table/reference/jquery.dataTables.min.js",
+              "src/app/core/elements/table/reference/dataTables.semanticui.min.js",
+              "semantic/dist/semantic.min.js"
+            ]
           },
           "configurations": {
             "production": {
