@@ -10,10 +10,25 @@ declare var $: any;
 export class AppComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
-      this.Loader = true;
-      setTimeout(() => {
-        // this.Loader = false;
-      }, 1000);
+      
+      // fix main menu to page on passing
+      $('.main.menu').visibility({
+        type: 'fixed'
+      });
+      $('.overlay').visibility({
+        type: 'fixed',
+        offset: 10
+      });
+      // lazy load images
+      $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+      });
+      // show dropdown on hover
+      $('.main.menu  .ui.dropdown').dropdown({
+        on: 'hover'
+      });
     }, 1000);
   }
   title = 'ClientApp';
