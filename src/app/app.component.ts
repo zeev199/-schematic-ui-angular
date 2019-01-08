@@ -9,39 +9,20 @@ declare var $: any;
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    setTimeout(() => {
-      
-      // fix main menu to page on passing
-      $('.main.menu').visibility({
-        type: 'fixed'
+    // fix menu when passed
+    $('.masthead')
+      .visibility({
+        once: false,
+        onBottomPassed: () => {
+          $('.fixed.menu').transition('fade in');
+        },
+        onBottomPassedReverse: () => {
+          $('.fixed.menu').transition('fade out');
+        }
       });
-      $('.overlay').visibility({
-        type: 'fixed',
-        offset: 10
-      });
-      // lazy load images
-      $('.image').visibility({
-        type: 'image',
-        transition: 'vertical flip in',
-        duration: 500
-      });
-      // show dropdown on hover
-      $('.main.menu  .ui.dropdown').dropdown({
-        on: 'hover'
-      });
-    }, 1000);
-  }
-  title = 'ClientApp';
-  Loader = true;
-  menu: IMenuConfig = {
-    menuItems: [
-      { title: "בדיקה", link: "fsdf" },
-      { title: "בדיקה", link: "gre" },
-      { title: "בדיקה", link: "ftrsdf" }
-    ]
-  }
-  tblConfig: ITableConfig = {
-    basicConfigTable: { ordering: true, paging: false },
-    moreConfigTable: { searching: true }
   }
 }
+
+
+
+
