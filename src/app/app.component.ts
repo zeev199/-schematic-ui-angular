@@ -9,17 +9,23 @@ declare var $: any;
 })
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    // fix menu when passed
-    $('.masthead')
-      .visibility({
-        once: false,
-        onBottomPassed: () => {
-          $('.fixed.menu').transition('fade in');
-        },
-        onBottomPassedReverse: () => {
-          $('.fixed.menu').transition('fade out');
-        }
-      });
+
+    // fix menu
+    //   $('.ui.sticky')
+    // .sticky({
+    //   context: '.main'
+    // });
+    $('.ui.sidebar')
+  .sidebar({
+    transition: 'scale down',
+    context: $('.main'),
+    dimPage: false, 
+    closable: false
+  })
+  }
+  toggleSidebar() {
+    $('.ui.sidebar')
+      .sidebar('toggle');
   }
 }
 
