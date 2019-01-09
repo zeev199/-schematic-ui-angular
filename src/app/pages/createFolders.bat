@@ -1,0 +1,73 @@
+cd ClientApp/src/app/pages
+if not exist TR mkdir TR
+if not exist Entity mkdir Entity
+if not exist Relationship mkdir Relationship
+cd TR
+if not exist "TRBank" mkdir TRBank 
+if not exist "TRBranch" mkdir TRBranch 
+if not exist "TRBudgetItemType" mkdir TRBudgetItemType 
+if not exist "TRBudgetType" mkdir TRBudgetType 
+if not exist "TRCommittee" mkdir TRCommittee 
+if not exist "TRDecision" mkdir TRDecision 
+if not exist "TRDepartment" mkdir TRDepartment 
+if not exist "TRDocumentType" mkdir TRDocumentType 
+if not exist "TREntityType" mkdir TREntityType 
+if not exist "TRkolKoreh" mkdir TRkolKoreh 
+if not exist "TROrganization" mkdir TROrganization 
+if not exist "TRPaymentCondition" mkdir TRPaymentCondition 
+if not exist "TRPersonType" mkdir TRPersonType 
+if not exist "TRPosition" mkdir TRPosition 
+if not exist "TRRecommendation" mkdir TRRecommendation 
+if not exist "TRResearch" mkdir TRResearch 
+if not exist "TRSpecialty" mkdir TRSpecialty 
+if not exist "TRStatus" mkdir TRStatus 
+if not exist "TRTaskItemStatus" mkdir TRTaskItemStatus 
+if not exist "TRTaskItemType" mkdir TRTaskItemType 
+if not exist "TRTitle" mkdir TRTitle 
+if not exist "TRTypeBudget" mkdir TRTypeBudget 
+if not exist "TRUnitType" mkdir TRUnitType 
+cd..
+cd Entity
+if not exist "Address" mkdir Address 
+if not exist "BankAccount" mkdir BankAccount 
+if not exist "Budget" mkdir Budget 
+if not exist "BudgetItem" mkdir BudgetItem 
+if not exist "Committee" mkdir Committee 
+if not exist "Condition" mkdir Condition 
+if not exist "Contact" mkdir Contact 
+if not exist "Contract" mkdir Contract 
+if not exist "Decision" mkdir Decision 
+if not exist "Discussion" mkdir Discussion 
+if not exist "Document" mkdir Document 
+if not exist "FundBudget" mkdir FundBudget 
+if not exist "KolKoreh" mkdir KolKoreh 
+if not exist "Letters" mkdir Letters 
+if not exist "Member" mkdir Member 
+if not exist "Organization" mkdir Organization 
+if not exist "Payment" mkdir Payment 
+if not exist "PaymentCondition" mkdir PaymentCondition 
+if not exist "Request" mkdir Request 
+if not exist "Research" mkdir Research 
+if not exist "Researcher" mkdir Researcher 
+if not exist "ResearchProposal" mkdir ResearchProposal 
+if not exist "ScheduleRequest" mkdir ScheduleRequest 
+if not exist "TaskItem" mkdir TaskItem 
+if not exist "User" mkdir User 
+cd..
+cd Relationship
+if not exist "CommitteeMembers" mkdir CommitteeMembers 
+if not exist "ContractTaskItem" mkdir ContractTaskItem 
+if not exist "DiscussionDocuments" mkdir DiscussionDocuments 
+if not exist "DiscussionMembers" mkdir DiscussionMembers 
+if not exist "DiscussionTaskItem" mkdir DiscussionTaskItem 
+if not exist "OrganizationBankAccount" mkdir OrganizationBankAccount 
+if not exist "OrganizationResearchers" mkdir OrganizationResearchers 
+if not exist "PaymentConditionDocument" mkdir PaymentConditionDocument 
+if not exist "RequestAdditionalFunding" mkdir RequestAdditionalFunding 
+if not exist "RequestAdditionalResearcher" mkdir RequestAdditionalResearcher 
+if not exist "RequestDocuments" mkdir RequestDocuments 
+if not exist "RequestGuide" mkdir RequestGuide 
+if not exist "RequestResearchProposal" mkdir RequestResearchProposal 
+if not exist "RequestTaskItem" mkdir RequestTaskItem 
+if not exist "ResearchDocuments" mkdir ResearchDocuments 
+if not exist "ResearchTaskItem" mkdir ResearchTaskItem 
