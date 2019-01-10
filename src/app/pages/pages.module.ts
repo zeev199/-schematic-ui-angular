@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PagesComponent } from './pages.component';
+import { PagesComponent } from './layout/pages.component';
 import { RouterModule, Routes } from '@angular/router';
 import { routes } from './entities-routes';
 import { DashboardComponent } from './dashboard/dashboard.component';
